@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Brawl Competitive Bot</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet"/>
+  <style>
+    body {
+      font-family: "Inter", Arial, sans-serif;
+    }
+    @keyframes fadeInUp {
+      0% { opacity: 0; transform: translateY(40px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+    .animate-fade-in-up {
+      animation: fadeInUp 0.35s cubic-bezier(0.4,0,0.2,1);
+    }
+    /* Responsive improvements */
+    @media (max-width: 640px) {
+      html, body {
+        width: 100vw !important;
+        overflow-x: hidden !important;
+      }
+      .max-w-5xl, .max-w-3xl, .max-w-2xl, .max-w-md, .max-w-xs, .w-80, .max-w-xs {
+        max-width: 100vw !important;
+      }
+      .container, .w-full, .h-full {
+        width: 100vw !important;
+        min-width: 0 !important;
+      }
+      .px-4, .sm\:px-4, .sm\:px-10, .px-8, .sm\:px-8 {
+        padding-left: 0.5rem !important;
+        padding-right: 0.5rem !important;
+      }
+      .py-10, .sm\:py-16, .py-8, .sm\:py-14 {
+        padding-top: 1rem !important;
+        padding-bottom: 1rem !important;
+      }
+      .rounded-xl, .rounded-2xl, .rounded-3xl {
+        border-radius: 0.75rem !important;
+      }
+      .text-2xl, .sm\:text-3xl, .text-3xl, .sm\:text-4xl, .text-4xl {
+        font-size: 1.1rem !important;
+      }
+      .text-lg, .sm\:text-xl, .text-xl, .sm\:text-2xl, .text-base {
+        font-size: 0.95rem !important;
+      }
+      .py-4, .sm\:py-5, .py-5 {
+        padding-top: 0.5rem !important;
+        padding-bottom: 0.5rem !important;
+      }
+      .px-8, .sm\:px-12, .px-10, .sm\:px-10 {
+        padding-left: 0.75rem !important;
+        padding-right: 0.75rem !important;
+      }
+      .object-cover {
+        object-fit: cover;
+      }
+      .p-6, .sm\:p-10 {
+        padding: 1rem !important;
+      }
+      .gap-8, .sm\:gap-12 {
+        gap: 1rem !important;
+      }
+      .mb-8, .sm\:mb-12, .mb-10, .mb-12, .mb-14 {
+        margin-bottom: 1rem !important;
+      }
+      .py-8, .sm\:py-12 {
+        padding-top: 1rem !important;
+        padding-bottom: 1rem !important;
+      }
+      .rounded-full {
+        border-radius: 9999px !important;
+      }
+    }
+  </style>
+</head>
+<body class="bg-gradient-to-b from-white to-indigo-100 min-h-screen relative">
+  <header class="flex flex-col sm:flex-row justify-between items-center w-full pl-4 pr-4 py-4 gap-2 sm:gap-0">
+    <div class="flex items-center space-x-2 text-indigo-900 text-lg font-semibold">
+      <i class="fas fa-gamepad text-indigo-600"></i>
+      <span>Brawl Competitive Bot</span>
+    </div>
+    <nav class="flex space-x-2 sm:space-x-4 mt-2 sm:mt-0">
+      <a href="/" class="text-indigo-700 hover:text-indigo-900 font-medium transition text-base sm:text-lg">Inicio</a>
+      <a href="/productos.html" class="text-indigo-700 hover:text-indigo-900 font-medium transition text-base sm:text-lg">Productos</a>
+    </nav>
+  </header>
+
+  <main class="w-full max-w-5xl mx-auto mt-8 px-2 sm:px-4">
+    <div class="rounded-xl shadow-2xl px-4 sm:px-10 py-10 sm:py-16 text-center w-full max-w-3xl mx-auto mb-10 bg-white/80 backdrop-blur-md border border-indigo-100">
+      <p class="text-indigo-900 text-2xl sm:text-4xl mb-6 sm:mb-8 font-extrabold tracking-tight drop-shadow-lg">
+        ¡Obtén el código de Brawl Competitive Bot y hazlo tuyo!
+      </p>
+      <p class="text-indigo-700 text-base sm:text-xl mb-8 sm:mb-10 font-medium">
+        Organiza partidas competitivas de Brawl Stars de forma automática, rápida y divertida en tu propio servidor de Discord.
+      </p>
+      <a href="/productos.html" class="inline-block text-white bg-gradient-to-r from-indigo-600 to-purple-500 hover:from-purple-600 hover:to-indigo-700 font-bold rounded-full px-8 sm:px-12 py-4 sm:py-5 text-lg sm:text-2xl shadow-lg transition border-2 border-indigo-500 hover:scale-105 transform duration-200">
+        <i class="fas fa-shopping-cart mr-2 sm:mr-3"></i>Comprar Brawl Competitivo
+      </a>
+    </div>
+    <section class="rounded-3xl px-2 sm:px-8 py-8 sm:py-14 w-full max-w-5xl mx-auto mb-12 bg-white/70 backdrop-blur-md border border-indigo-100 shadow-xl">
+      <h2 class="text-2xl sm:text-3xl font-extrabold text-indigo-800 mb-8 sm:mb-10 text-center tracking-tight drop-shadow">¿Cómo funciona?</h2>
+      <ol class="space-y-8 sm:space-y-12 list-decimal list-inside">
+        <li class="flex flex-col items-center">
+          <div class="relative w-full max-w-xs sm:max-w-2xl mb-4 sm:mb-6">
+            <img src="int1.PNG" alt="Paso 1" class="rounded-2xl shadow-2xl w-full object-cover border-4 border-indigo-200 hover:scale-105 transition-transform duration-300"/>
+            <span class="absolute top-2 sm:top-4 left-2 sm:left-4 bg-indigo-600 text-white px-3 sm:px-4 py-1.5 sm:py-2 rounded-full text-base sm:text-lg font-bold shadow-lg">1</span>
+          </div>
+          <span class="text-base sm:text-xl text-indigo-900 font-semibold text-center">Configura el bot en tu servidor de Discord.</span>
+        </li>
+        <li class="flex flex-col items-center">
+          <div class="relative w-full max-w-xs sm:max-w-2xl mb-4 sm:mb-6">
+            <img src="int2.PNG" alt="Paso 2" class="rounded-2xl shadow-2xl w-full object-cover border-4 border-indigo-200 hover:scale-105 transition-transform duration-300"/>
+            <span class="absolute top-2 sm:top-4 left-2 sm:left-4 bg-indigo-600 text-white px-3 sm:px-4 py-1.5 sm:py-2 rounded-full text-base sm:text-lg font-bold shadow-lg">2</span>
+          </div>
+          <span class="text-base sm:text-xl text-indigo-900 font-semibold text-center">Crea y organiza partidas competitivas fácilmente.</span>
+        </li>
+        <li class="flex flex-col items-center">
+          <div class="relative w-full max-w-xs sm:max-w-2xl mb-4 sm:mb-6">
+            <img src="int3.PNG" alt="Paso 3" class="rounded-2xl shadow-2xl w-full object-cover border-4 border-indigo-200 hover:scale-105 transition-transform duration-300"/>
+            <span class="absolute top-2 sm:top-4 left-2 sm:left-4 bg-indigo-600 text-white px-3 sm:px-4 py-1.5 sm:py-2 rounded-full text-base sm:text-lg font-bold shadow-lg">3</span>
+          </div>
+          <span class="text-base sm:text-xl text-indigo-900 font-semibold text-center">Gestiona equipos y resultados de manera automática.</span>
+        </li>
+        <li class="flex flex-col items-center">
+          <div class="relative w-full max-w-xs sm:max-w-2xl mb-4 sm:mb-6">
+            <img src="int4.PNG" alt="Paso 4" class="rounded-2xl shadow-2xl w-full object-cover border-4 border-indigo-200 hover:scale-105 transition-transform duration-300"/>
+            <span class="absolute top-2 sm:top-4 left-2 sm:left-4 bg-indigo-600 text-white px-3 sm:px-4 py-1.5 sm:py-2 rounded-full text-base sm:text-lg font-bold shadow-lg">4</span>
+          </div>
+          <span class="text-base sm:text-xl text-indigo-900 font-semibold text-center">¡Disfruta de la competencia y diviértete!</span>
+        </li>
+      </ol>
+    </section>
+  </main>
+
+  <button id="supportBtn" aria-label="Soporte" class="fixed bottom-4 right-4 w-12 h-12 sm:w-16 sm:h-16 rounded-full bg-gradient-to-br from-indigo-600 to-purple-500 shadow-2xl flex items-center justify-center text-white text-2xl sm:text-3xl hover:scale-110 hover:bg-indigo-700 transition-all duration-200 border-4 border-white z-50">
+    <i class="fas fa-comment-dots"></i>
+  </button>
+  <div id="supportModal" class="hidden fixed bottom-24 right-4 sm:right-8 bg-white rounded-2xl shadow-2xl border border-indigo-200 p-6 w-80 max-w-xs z-50">
+    <div class="flex justify-between items-center mb-2">
+      <span class="font-bold text-indigo-800 text-lg">Soporte</span>
+      <button id="closeSupportModal" class="text-gray-400 hover:text-indigo-600 text-xl font-bold">&times;</button>
+    </div>
+    <p class="text-gray-700 text-base mb-3">Para soporte, contáctame por Discord:</p>
+    <div class="flex items-center gap-2 mb-2">
+      <i class="fab fa-discord text-indigo-600 text-xl"></i>
+      <span class="font-semibold text-indigo-900">azurosan</span>
+    </div>
+    <p class="text-gray-700 text-base mb-2">O únete a la comunidad y crea un ticket:</p>
+    <a href="https://discord.gg/RvRxRhec4Z" target="_blank" class="block bg-indigo-600 hover:bg-indigo-700 text-white font-bold rounded-lg px-4 py-2 text-center transition">Unirse al Discord</a>
+  </div>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const supportBtn = document.getElementById('supportBtn');
+      const supportModal = document.getElementById('supportModal');
+      const closeSupportModal = document.getElementById('closeSupportModal');
+      if (supportBtn && supportModal && closeSupportModal) {
+        supportBtn.addEventListener('click', function(e) {
+          e.stopPropagation();
+          supportModal.classList.remove('hidden');
+          supportModal.classList.add('animate-fade-in-up');
+          setTimeout(() => supportModal.classList.remove('animate-fade-in-up'), 400);
+        });
+        closeSupportModal.addEventListener('click', function(e) {
+          e.stopPropagation();
+          supportModal.classList.add('hidden');
+        });
+        window.addEventListener('click', function(e) {
+          if (supportModal && !supportModal.classList.contains('hidden') && !supportModal.contains(e.target) && e.target !== supportBtn) {
+            supportModal.classList.add('hidden');
+          }
+        });
+      }
+    });
+  </script>
+
+  <footer class="bg-white text-center py-4 mt-8 shadow-inner w-full">
+    <p class="text-gray-600 text-sm">&copy; 2025 Brawl Competitive Bot. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>
